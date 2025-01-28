@@ -1,0 +1,33 @@
+@import "../utilidades/mixin";
+
+// Header
+header {
+    background-color: $header-bg;
+    @include flex-center(row, 30px);
+    padding: 20px;
+  
+    img {
+      width: 100px;
+      height: auto;
+    }
+  
+    nav {
+      
+      gap: 30px;
+      list-style: none;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: $font-color;
+          font-weight: bold;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+  

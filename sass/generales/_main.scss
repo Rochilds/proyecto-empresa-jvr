@@ -1,0 +1,46 @@
+@import "../utilidades/mixin";
+
+// Main
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+    padding: 40px 20px;
+  
+    h1 {
+      color: black;
+      font-style: italic;
+      margin-bottom: 20px;
+      @include responsive-text(2rem);
+    }
+  
+    p {
+      margin-bottom: 15px;
+      font-family: $font-family;
+    }
+  
+    table {
+      width: 100%;
+      max-width: 800px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+  
+      th,
+      td {
+        border: $table-border;
+        padding: 10px;
+        color: $font-color;
+      }
+  
+      th {
+        background-color: $header-bg;
+      }
+  
+      tr:nth-child(even) {
+        background-color: $table-even-bg;
+      }
+    }
+  }
+  

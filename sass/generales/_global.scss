@@ -1,0 +1,16 @@
+@import "../utilidades/variables";
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background-color: $bg-color;
+    font-family: $font-family;
+    line-height: 1.6;
+    color: $font-color;
+  }

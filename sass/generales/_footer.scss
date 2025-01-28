@@ -1,0 +1,11 @@
+@import "../utilidades/mixin";
+
+
+// Footer
+footer {
+    text-align: center;
+    background-color: $header-bg;
+    color: $font-color;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }

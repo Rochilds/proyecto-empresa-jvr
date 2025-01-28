@@ -1,0 +1,15 @@
+// Mixins
+@mixin flex-center($direction: row, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+  }
+  
+  @mixin responsive-text($size) {
+    font-size: $size;
+    @media (max-width: 768px) {
+      font-size: $size * 0.8;
+    }
+  }

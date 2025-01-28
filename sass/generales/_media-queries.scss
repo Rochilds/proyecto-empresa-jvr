@@ -1,0 +1,32 @@
+@import "../utilidades/mixin";
+
+// Media Queries
+@media (max-width: 768px) {
+    header {
+      flex-direction: column;
+  
+      nav {
+        flex-wrap: wrap;
+      }
+  
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  
+    main {
+      grid-template-columns: 1fr;
+      padding: 20px 10px;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
